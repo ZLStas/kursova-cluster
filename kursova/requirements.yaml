@@ -1,0 +1,9 @@
+dependencies:
+  - name: sparkoperator
+    version: 0.5.0
+    repository: http://storage.googleapis.com/kubernetes-charts-incubator/
+    condition: sparkoperator.enabled
+  - name: hbase
+    version: 1.1.1
+    repository: file://../hbase
+    condition: hbase.enabled
